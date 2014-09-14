@@ -1,0 +1,7 @@
+archive/
+dist/
+auto/
+*.log
+*.aux
+*.out
+*.pdf
