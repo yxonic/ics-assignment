@@ -1,0 +1,15 @@
+digraph 41 {
+        0->5[label="N"]; 5->10[label="N"]; 10->15[label="N"];
+        15->20[label="N"]; 20->25[label="N"]; 25->30[label="N"];
+        30->"Soda"[label="N"];
+                        
+        0->10[label="D"]; 5->15[label="D"]; 10->20[label="D"];
+        15->25[label="D"]; 20->30[label="D"]; 25->"Soda"[label="D"];
+        30->"Soda\nnickel"[label="D"];
+        
+        0->25[label="Q"]; 5->30[label="Q"]; 10->"Soda"[label="Q"];
+        15->"Soda\nnickel"[label="Q"];
+        20->"Soda\ndime"[label="Q"];
+        25->"Soda\nnickel, dime"[label="Q"];
+        30->"Soda\n2 dimes"[label="Q"];
+}
