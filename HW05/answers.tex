@@ -1,0 +1,126 @@
+\documentclass[a4paper]{article}
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={HW05},
+  pdfauthor={Yin Yu},
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=cyan
+}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage[all,pdf]{xy}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  backgroundcolor=\color{white},
+  basicstyle=\footnotesize\ttfamily,     
+  breakatwhitespace=false,      
+  breaklines=true,              
+  captionpos=t,   
+  commentstyle=\color{mygreen}, 
+  escapeinside={\%*}{*)},
+  frame=t,
+  keepspaces=true,
+  language=Bash,
+  numbers=left,                   
+  numbersep=5pt,                  
+  numberstyle=\tiny\color{mygray},
+  rulecolor=\color{black},        
+  showspaces=false,               
+  showstringspaces=false,         
+  showtabs=false,                 
+  stringstyle=\color{mymauve},
+  tabsize=4,                  
+  title=\lstname,
+  xleftmargin=3em,
+  xrightmargin=3em
+}
+\usepackage{caption}
+\captionsetup[lstlisting]{
+  font={tt,footnotesize}
+}
+
+\title{\textbf{HW05}}
+\author{\texttt{PB13011038}\quad\textbf{Yin Yu}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+\item[4.4] Word length refers to the size of the quantities normally
+  processed by the ALU. A word is handled as a unit by the instruction
+  set or the hardware of the processor, therefore it's size affects
+  how many bits computer can process at a time.
+
+\item[4.5] 
+\begin{enumerate}
+\item Location 3: 0000000000000000
+
+  Location 6: 1111111011010011
+\item 
+\begin{enumerate}
+\item Location 0: 7747
+
+  Location 1: -4059
+\item Location 4: `e'
+\item Location 6, 7: $8.200076\times10^{-35}$
+\item Location 0: 7747
+
+Location 1: 61477
+\end{enumerate}
+
+\item Location 0: \verb+ADD R7 R1 R3+
+
+\item Location 5 refers to location 6. Value: 1111111011010011
+\end{enumerate}
+
+\item[4.8]
+\begin{enumerate}
+\item 8 bits are needed.
+\item 7 bits are needed.
+\item At most 3 bits.
+\end{enumerate}
+
+\item[4.10] See table below.
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c}
+\hline
+& Fetch Instruction & Decode & Evaluate Address & Fetch Data & Execute
+& Store Result \\
+\hline
+PC & All & - & - & - & JMP & - \\
+IR & All & - & - & - & - & - \\
+MAR & All & - & - & LDR & - & - \\
+MDR & All & - & - & LDR & - & - \\
+\hline
+\end{tabular}
+\end{center}
+
+\item[4.13] IA-32 instruction takes $100\times 3 + 3 = 303$
+  cycles. LC-3 takes $100 + 4 = 104$ cycles.
+
+\item[4.15] Reinitiating RUN latch can't be done by instruction,
+  because the clock stoped and no instruction can be executed. This
+  can only be done by external input.
+
+\item[4.16]
+  \begin{enumerate}
+  \item $5\times 10^{8}$
+  \item $6.25\times 10^{7}$
+  \item $5\times 10^{8}$
+  \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
