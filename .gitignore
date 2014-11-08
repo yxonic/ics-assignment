@@ -6,3 +6,7 @@ auto/
 *.out
 *.pdf
 *~
+*.hex
+*.obj
+*.sym
+*.bin
